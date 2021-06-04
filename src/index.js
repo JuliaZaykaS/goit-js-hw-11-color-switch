@@ -11,7 +11,7 @@ refs.btnStopEl.addEventListener('click', onBtnStopClick);
 
 
 function changeBodyColor() {
-    document.body.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length)];
+    document.body.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length - 1)];
 };
 
 let timerId;
