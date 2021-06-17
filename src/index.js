@@ -18,7 +18,8 @@ let timerId;
 
 function onBtnStartClick() {
 
-    if (timerId) return;
+    // if (timerId) return;
+    refs.btnStartEl.disabled = 'disabled';
 
     return timerId = setInterval(changeBodyColor, 1000);
 
@@ -27,6 +28,8 @@ function onBtnStartClick() {
 function onBtnStopClick() {
     clearInterval(timerId);
     timerId = 0;
+    refs.btnStartEl.disabled = '';
+
 
 }
 
